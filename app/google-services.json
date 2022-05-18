@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "341069978392",
+    "project_id": "first-project-32ed8",
+    "storage_bucket": "first-project-32ed8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:341069978392:android:91eab28fc2ab9dcac51c6d",
+        "android_client_info": {
+          "package_name": "com.example.cshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "341069978392-jc17fgqai5ero19ruhi9195rud4tajf0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBj0FoGzQxTVgOKjOxkDtfn5bVOWROBHNY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "341069978392-jc17fgqai5ero19ruhi9195rud4tajf0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Utilits.TestDao"
+    android:layout_marginBottom="30dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/TitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:text="Chech Box"
+        android:textStyle="bold" />
+    <RadioGroup
+        android:id="@+id/RAdioGroub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:checkedButton="@id/radio_Restaurant"
+        >
+        <RadioButton
+            android:id="@+id/radio_Restaurant"
+            android:layout_height="wrap_content"
+            android:text="Restaurant"
+            android:textSize="15sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            >
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/radio_Supermarket"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="SuperMarket"
+            android:textSize="15sp"
+            />
+        <RadioButton
+            android:id="@+id/radio_Vegetables"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Vegetables"
+            android:textSize="15sp"
+            />
+    </RadioGroup>
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        />
+        <EditText
+            android:id="@+id/edit_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="description" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp">
+        <Button
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Update"
+            android:onClick="updateShop"
+            android:visibility="invisible"
+            />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addShop"
+            android:text="Add" />
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:onClick="deleteShop"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/addPoductLayout"
+        layout="@layout/add_product"
+        android:visibility="invisible" />
+
+</LinearLayout></ScrollView>
